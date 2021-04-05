@@ -1,0 +1,40 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
+			"name": "MyProject_re (Windows)",
+			"shell_cmd": "cmake --build .",
+			"syntax": "Packages/CMakeBuilder/Syntax/Visual_Studio.sublime-syntax",
+			"variants":
+			[
+				{
+					"name": "ALL_BUILD",
+					"shell_cmd": "cmake --build . --target ALL_BUILD"
+				},
+				{
+					"name": "ZERO_CHECK",
+					"shell_cmd": "cmake --build . --target ZERO_CHECK"
+				},
+				{
+					"name": "src/hello",
+					"shell_cmd": "cmake --build . --target src/hello"
+				}
+			],
+			"working_dir": "${project_path}/build"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"cmake":
+		{
+			"build_folder": "${project_path}/build"
+		}
+	}
+}

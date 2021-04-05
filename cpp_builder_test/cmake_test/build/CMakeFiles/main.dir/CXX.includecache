@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/hjyoon/OneDrive/Programming/cpp_builder_test/MyProject/src/source/hjyoon.h
+iostream
+-
+
+C:/Users/hjyoon/OneDrive/Programming/cpp_builder_test/MyProject/src/source/main.cpp
+hjyoon.h
+C:/Users/hjyoon/OneDrive/Programming/cpp_builder_test/MyProject/src/source/hjyoon.h
+
+C:/Users/hjyoon/OneDrive/Programming/cpp_builder_test/MyProject/src/source/print.cpp
+hjyoon.h
+C:/Users/hjyoon/OneDrive/Programming/cpp_builder_test/MyProject/src/source/hjyoon.h
+
